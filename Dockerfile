@@ -1,6 +1,4 @@
-from ubuntu:14.04
-
-MAINTAINER Michael Su <mdasu1@gmail.com>
+FROM phusion/baseimage
 
 ENV VISUAL_WORD_LIST_PATH /pastec/visualWordsORB.dat
 
