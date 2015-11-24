@@ -1,8 +1,6 @@
 docker-pastec
 =============
 
-Docker container for Pastec
+Docker container for Pastec.
 
-TODO
-----
-- Add ability to load an index file to docker entrypoint
+forked from Emsu/docker-pastec
