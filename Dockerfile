@@ -2,9 +2,10 @@ FROM ubuntu:trusty
 
 ENV VISUAL_WORD_LIST_PATH /pastec/visualWordsORB.dat
 
-RUN buildDeps='cmake curl git libopencv-dev libmicrohttpd-dev libjsoncpp-dev'; \
+RUN buildDeps='curl cmake git make gcc g++ ca-certificates'; \
     set -x \
     && apt-get update && apt-get install -y $buildDeps --no-install-recommends \
+    && apt-get install -y libopencv-dev libmicrohttpd-dev libjsoncpp-dev --no-install-recommends \
     && mkdir -p /usr/src \
     && git clone https://github.com/Visu4link/pastec.git /usr/src/pastec \
     && mkdir -p /usr/src/pastec/build \
